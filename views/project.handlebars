@@ -8,24 +8,25 @@
 </head>
 
 <body>
-	<div class="container">
-		<!--Title-->
-		<div class="jumbotron">
-				<h1>WorkOut Builder. First Screen</h1>
-				<p>Your Phone is your Best Gym Buddy!</p>
+	<header>
+		<div class="container">
+			<div class="jumbotron">
+					<h1>{{projectName}}</h1>
+					<p>Try and go back to the first screen</p>
+			</div>
 		</div>
+	</header>
+	<ol>
+		<button type="button"><li><a href="../">Hello</a></li></button>
+	</ol>
+	<img src="../squat.jpg" alt="Squat" height="42" width="42">
+	<h3>Squats</h3>
+	<!--Include json files for workouts in week 6, SEE LAB4 for help-->
 
-		<!--Links-->
-		<ol>
-			{{#each nav_title}}
-				<button type="button"><li><a href="project/{{name}}">{{name}}</a></li></button>
-			{{/each}}
-		</ol>
-
-		<!--Name-->
-	</div>
-</body>
 	
+
+
+</body>
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 </body>
