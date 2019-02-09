@@ -5,24 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/indexcss.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="container">
-		<!--Title-->
-		<div class="jumbotron">
-				<h1>WorkOut Builder. First Screen</h1>
-				<p>Your Phone is your Best Gym Buddy!</p>
-		</div>
-
-		<!--Links-->
-		<ol>
+		<!--Buttons/Header-->
+		<header> 
 			{{#each nav_title}}
-				<button type="button"><li><a href="project/{{name}}">{{name}}</a></li></button>
+				<button id="nav_btn"><a href="project/{{name}}">{{name}}</a></button>
 			{{/each}}
-		</ol>
+		</header>
+		
+		<h1 class="web_name"> WorkOut Builder</h1>
+	
+		<button class = "start_center">Start</button>
 
-		<!--Name-->
+
 	</div>
 </body>
 	

@@ -1,0 +1,47 @@
+body{
+	margin: 0px ;/*outside object*/
+	padding: 0px; /*inside object*/
+}
+
+
+.container{
+	text-align: center;
+}
+
+#nav_btn{
+	padding: 10px 20px;
+	margin: 10px 4px;
+	position: relative;
+	top: 10px;
+	border: 2px solid #42bcf4;
+	background: none;
+	font-size: 20px;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+
+.start_center{
+	bottom: 10%;
+	left: 48%; /*this centers the button*/
+	margin: 4px 5px;
+	padding: 20px;
+	border: solid black;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #f97f7f;
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: center;
+	transform: translateX(-39%) translateY(0%);
+}
+
+.web_name{
+	position: absolute;
+	top: 44%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/*ABOVE IS THE HOME PAGE*/
+/*BELOW IS THE SECOND SCREEN*/
+
