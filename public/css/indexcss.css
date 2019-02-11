@@ -12,12 +12,18 @@ body{
 	padding: 10px 20px;
 	margin: 10px 4px;
 	position: relative;
-	top: 10px;
-	border: 2px solid #42bcf4;
+	left: 50%;
+	top: 120px;
+	margin-left:-150px; 
+	width: 300px;
+	border: 3px solid #42bcf4;
 	background: none;
-	font-size: 20px;
+	font-size: 36px;
 	font-family: sans-serif;
 	cursor: pointer;
+	display: block;
+	
+
 }
 
 .start_center{
@@ -37,11 +43,31 @@ body{
 }
 
 .web_name{
-	position: absolute;
-	top: 44%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+	position: relative;
+	top: 70px;
+	font-size: 56px;
+	font-family: sans-serif;
 }
+
+.web_name_start{
+	margin: 10px;
+	padding: 8px;
+	position: auto;
+	top: 50px;
+	border-radius: 25px;
+	border: 3px solid #42bcf4;
+	background-color: red;
+	font-size: 36px;
+	font-family: sans-serif;
+}
+
+#back_btn{
+	padding: 10px 20px;
+	margin: 10px 4px;
+	position: relative;
+	top: 370px;
+}
+
 /*ABOVE IS THE HOME PAGE*/
 /*BELOW IS THE SECOND SCREEN*/
 

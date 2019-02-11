@@ -5,25 +5,21 @@
 
 exports.view = function(req, res){
   res.render('index',{
-  	"nav_title": [
+  	"nav_title": [ 
+        {
+            "name": "Start",
+            "path": "start"
+        },
     	{
     		"name": "My Workouts",
-    		"id": "nav1"
-    	},
-    	{
-    		"name": "Timer",
-    		"id": "nav2"
+    		"path": "myworkouts"
     	},
     	{
     		"name": "Help and Documentation",
-    		"id": "nav3"
-    	}
+    		"path": "help"
+    	},
+       
+
     ]
   });
 };
-
-exports.viewProject = function(req, res){
-  var name = req.params.name;
-  console.log("The project name is: " + name);
-  res.render(index);
-}
