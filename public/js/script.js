@@ -8,8 +8,6 @@ let interval = null;
 let status = "stopped";
 var rep_minute = null;
 var list_length = null;
-var button = document.getElementById('startStop');
-var autoStopSec = rep_minute * list_length;
 
 function stopWatch(){
 	seconds++;

@@ -130,7 +130,7 @@ header{
 
 }
 
-#app_btn{
+#app_btn, #back_btn{
 	list-style: none;
 	display: inline;
 	width: 100px;
@@ -139,6 +139,11 @@ header{
 	font-size: 20px;
 	margin: 1px 2px 1px 0px;
 	font-size: 24px;
+}
+
+.home-btn{
+	position: absolute;
+	left: 100px;
 }
 
 
