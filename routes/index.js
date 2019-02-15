@@ -7,19 +7,17 @@ exports.view = function(req, res){
   res.render('index',{
   	"nav_title": [ 
         {
-            "name": "Start",
+            "name": "Edit",
             "path": "start"
         },
     	{
-    		"name": "My Workouts",
+    		"name": "Start",
     		"path": "myworkouts"
     	},
     	{
-    		"name": "Help and Documentation",
+    		"name": "Help",
     		"path": "help"
     	},
-       
-
     ]
   });
 };

@@ -3,70 +3,145 @@ body{
 	padding: 0px; /*inside object*/
 }
 
+/*Header, Footer*/
+header{
+	background: red;
+	width: 95%;
+	height:100px;
+	border:2px solid;
+	position: relative;
+	top: 25px;
+	left: 10px;
+}
+
+#app_title{
+	position: relative;
+	width: 100%;
+	top: 8px;
+	text-align: center;
+}
+
 
 .container{
+	margin: 1px;
+	padding: 1px;
+	position: absolute;
+	top: 150px;
+	width:95%;
+	left:10px;
+	text-align: center;
+	border-style: solid;
+}
+
+#timer{
+	position: relative;
+}
+#time_display{
+	width: 100%;
+	font-size: 80px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+#startStop, #reset{
+	position: relative;
+	bottom: 10px;
+
+}
+.buttons{
 	text-align: center;
 }
 
-#nav_btn{
-	padding: 10px 20px;
-	margin: 10px 4px;
+
+/*Workout List*/
+.myexercises{
+	border-style: solid;
+	text-align: center;
+	width:95%;
+	position: absolute;
+	left:10px;
+	bottom: 100px;
+	height: 400px;
+	display: block;
+}
+#workout_list{
+	position: absolute;
+	right: 0px;
+
+}
+#exercises{
+	list-style: none;
+	display: block;
+	border-style:solid;
+	width: 350px;
+	padding: 8px;
+
+}
+.interval_container, #input_timer, #input, #input_btn{
 	position: relative;
-	left: 50%;
-	top: 120px;
-	margin-left:-150px; 
-	width: 300px;
+	/*background-color: red;*/
+	top: 20px;
+}
+
+.interval_container h1{
+	position: relative;
+	text-align: center;
+	top: 15px;
+}
+
+.exercises_contain, #exer_title, #exer_input, #exer_btn{
+	position: relative;
+	/*background-color: blue;*/
+}
+
+.exercises_contain h1{
+	position: relative;
+	text-align: center;
+}
+
+#myspan1{
+	position: relative;
+	left: 10%;
+	font-size: 36px;
+	bottom: 19px;
+}
+
+#myspan2{
+	position: relative;
+	left: 13%;
+	font-size: 36px;
+	bottom: 52px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Navigation Bar*/
+.home-btn{
+	position: absolute;
+	bottom: 15px;
+
+}
+
+#app_btn{
+	list-style: none;
+	display: inline;
+	width: 100px;
 	border: 3px solid #42bcf4;
 	background: none;
-	font-size: 36px;
-	font-family: sans-serif;
-	cursor: pointer;
-	display: block;
-	
-
-}
-
-.start_center{
-	bottom: 10%;
-	left: 48%; /*this centers the button*/
-	margin: 4px 5px;
-	padding: 20px;
-	border: solid black;
-	border-radius: 50%;
-	position: absolute;
-	background-color: #f97f7f;
-	color: white;
 	font-size: 20px;
-	font-family: sans-serif;
-	text-align: center;
-	transform: translateX(-39%) translateY(0%);
+	margin: 1px 2px 1px 0px;
+	font-size: 24px;
 }
 
-.web_name{
-	position: relative;
-	top: 70px;
-	font-size: 56px;
-	font-family: sans-serif;
-}
 
-.web_name_start{
-	margin: 10px;
-	padding: 8px;
-	position: auto;
-	top: 50px;
-	border-radius: 25px;
-	border: 3px solid #42bcf4;
-	background-color: red;
-	font-size: 36px;
-	font-family: sans-serif;
-}
-
-#back_btn{
-	padding: 10px 20px;
-	margin: 10px 4px;
-	position: relative;
-	top: 370px;
-}
 
 /*ABOVE IS THE HOME PAGE*/
 /*BELOW IS THE SECOND SCREEN*/

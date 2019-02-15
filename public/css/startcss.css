@@ -1,0 +1,23 @@
+.container{
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid black;
+	position: absolute;
+	top: 100px;
+}
+
+#back_btn{
+	padding: 10px 20px;
+	margin: 10px 4px;
+	position: relative;
+	top: 370px;
+	left: 40%;
+}
+
+
+
+
+/*ABOVE IS THE HOME PAGE*/
+/*BELOW IS THE SECOND SCREEN*/
+
