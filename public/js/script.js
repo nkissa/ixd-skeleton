@@ -63,14 +63,12 @@ function intervalTime(){
 	rep_minute = document.getElementById("input").value;
 	console.log(rep_minute);
 	document.getElementById('myspan1').textContent=rep_minute;
-	return rep_minute;
 }
 
 function exerciseCount(){
 	list_length = document.getElementById("exer_input").value;
 	console.log(list_length);
 	document.getElementById('myspan2').textContent=list_length;
-	return list_length;
 }
 
 function clear(){

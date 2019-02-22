@@ -158,6 +158,17 @@ header{
 	bottom: 2px;
 	left: 63px;
 }
+#back_btn2{
+	position: absolute;
+	bottom: 15%;
+	left: 45%;
+}
+
+#back_btn_back{
+	position: absolute;
+	bottom: 15%;
+	left: 45%;
+}
 
 
 
