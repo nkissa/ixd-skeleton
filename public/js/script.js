@@ -8,6 +8,7 @@ let interval = null;
 let status = "stopped";
 var rep_minute = null;
 var list_length = null;
+var audio = new Audio('../alarm.wav');
 
 function stopWatch(){
 	seconds++;
@@ -23,10 +24,12 @@ function stopWatch(){
 	}
 	if(seconds % rep_minute === 0){
 		console.log("Your exercise is done! Go to the next workout");
+		playAudio();
 	}
 	if(seconds == rep_minute * list_length){
 		console.log("Workout Complete");
     	status="started";
+    	playAudio();
     	clearInterval(interval);
 	}
 
@@ -34,6 +37,10 @@ function stopWatch(){
 	//Display
 	document.getElementById("time_display").innerHTML = hours + ":" + minutes + ":" + seconds;
 
+}
+
+function playAudio(){
+	audio.play();
 }
 
 
