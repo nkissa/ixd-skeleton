@@ -1,0 +1,18 @@
+{
+  	"nav_title": [ 
+    	{
+    		"Nav":[
+    			{
+	    		"name": "Help",
+	    		"path": "help"
+	    		}
+    		],
+    		"Exercises":[
+    			{
+	    		"name": "Exercise 1"
+	    		}
+    		]
+    	}
+
+    ]
+}

@@ -2,14 +2,8 @@
 /*
  * GET home page.
  */
+var data = require('../data.json');
 
 exports.view = function(req, res){
-  res.render('index',{
-  	"nav_title": [ 
-    	{
-    		"name": "Help",
-    		"path": "help"
-    	}
-    ]
-  });
+  res.render('index', data);
 };
