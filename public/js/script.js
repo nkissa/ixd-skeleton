@@ -6,9 +6,23 @@ let hours = 0;
 //define variables for startStop and questions
 let interval = null;
 let status = "stopped";
+var exer_name = null;
 var rep_minute = null;
 var list_length = null;
-var audio = new Audio('../alarm.wav');
+var audio = new Audio('js/alarm.wav');
+var list_exer = $("#list-exer");
+var exer_btn = $("#exer_btn");
+
+$(document).ready(function(){
+
+    $.get("/getdata", (exercises) => {
+        listExer(exercises);
+    })
+    exer_btn.click(function(e) {
+		e.preventDefault();
+		sendData();
+	});
+})
 
 function stopWatch(){
 	seconds++;
@@ -41,7 +55,7 @@ function stopWatch(){
 
 function playAudio(){
 	audio.play();
-}
+} 
 
 
 function startStop(rep_minute){
@@ -66,18 +80,35 @@ function reset(){
 	document.getElementById('startStop').innerHTML = "Start";
 }
 
-function intervalTime(){
-	rep_minute = document.getElementById("input").value;
+function sendData(){
+	console.log("submit clicked")
+	exer_name = document.getElementById("exer_name").value
+	console.log(exer_name);
+	rep_minute = document.getElementById("input").value
 	console.log(rep_minute);
-	document.getElementById('myspan1').textContent=rep_minute;
-}
-
-function exerciseCount(){
 	list_length = document.getElementById("exer_input").value;
 	console.log(list_length);
-	document.getElementById('myspan2').textContent=list_length;
+
+
+	$.post("/add",
+    {
+	  name: exer_name,
+      interval: rep_minute,
+      total_exercises: list_length
+    },
+    function(data, status){
+	  console.log(data);
+	  window.location.href = "/index";
+    }); 
 }
 
 function clear(){
 	document.getElementById("textfield1").value = "";
+}
+
+function listExer(exercises) {
+    list_exer.html(" ");
+    exercises.forEach(exer => {
+        list_exer.append("<p>" + exer.name + "</p>");
+    });
 }

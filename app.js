@@ -7,15 +7,19 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
+var bodyParser = require("body-parser");
 
 var index = require('./routes/index');
 var login = require("./routes/login");
 var help = require("./routes/help");
 var add = require("./routes/add");
+var timer = require("./routes/timer");
+var data = require("./routes/data");
 // Example route
 // var user = require('./routes/user');
 
 var app = express();
+app.use(bodyParser.urlencoded({extended: true}));
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -37,10 +41,14 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/index', index.view);
 app.get("/", login.viewLogin);
+app.get('/index', index.view);
 app.get("/help", help.viewHelpHB);
 app.get("/add", add.viewAddHB);
+app.get("/getdata", data.getData);
+app.get("/timer/:id", timer.viewTimer);
+
+app.post("/add",add.addData);
 
 // Example route
 // app.get('/users', user.list);

@@ -1,18 +1,21 @@
 {
-  	"nav_title": [ 
-    	{
-    		"Nav":[
-    			{
-	    		"name": "Help",
-	    		"path": "help"
-	    		}
-    		],
-    		"Exercises":[
-    			{
-	    		"name": "Exercise 1"
-	    		}
-    		]
-    	}
+	"Nav":[
+		{
+		"name": "Home",
+		"path": "index"
+		},
 
-    ]
+		{
+		"name": "Help",
+		"path": "help"
+		}
+	],
+	"exercises":[
+		{
+		"name": "Exercise 1",
+		"interval": 3,
+		"total_exercises": 4
+		}
+	]
+		
 }
