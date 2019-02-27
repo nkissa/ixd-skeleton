@@ -1,48 +1,90 @@
 body{
 	margin: 0px ;/*outside object*/
 	padding: 0px; /*inside object*/
-	background: #f8fcb5;
+	background: #FAFAD2;
+	font-family: "verdana", sans serif;
 }
 
 header{
 	margin: 2%;
 	padding: 2%;
 	width: 90%;
-	background: blue;
-	border:2px solid;
+	background:#f8fcb5 ;
+	border:1px solid;
+	
 }
 
 a{
 	text-decoration: none;
 }
+/*p91 title*/
 #app_title{
-	text-align: center
+	text-align: center;
 }
 
-
+/*history block*/
 .myexercises{
 	margin: 2%;
 	padding: 2%;
 	width: 90%;
-	border:2px solid;
+	border:0px;
+
+}
+h4 {
+  text-decoration: underline;
+}
+#all_exer{
+	list-style-type: none;
+	display: block;
+	width: 250px;
+	background-color: white;
+	align-items: center;
+	 text-align: center;
+	 padding: 15px;
+	 font-size: 25px;
 }
 
+ li{
+ 	text-align: center;
+  border-bottom: 1px solid #555;
+  padding-bottom: 15px;
+ }
+ li:last-child {
+  border-bottom: none;
+}
+
+#addworkout_btn{
+	margin-left: 25%;
+	font-size: 30px;
+}
+
+
+
+
+}
 #preset_btn{
 	display: block;
 	margin: 3% 0% 3% 0%;
 	padding: 3%;
 	width: 70%;
-	border: 2px solid black;
+	border: 1px solid blue;
 	background: white;
 	text-align: left;
+	display: block;
+	position: sticky;
+	bottom: 0;
 }
 .home-btn{
-	margin: 5% 2% 2% 2%;
-	padding: 2%
-	width: 90%;
-	bottom: 2%;
+	list-style-type: none;
+/*	margin: 5% 2% 2% 2%;
+	padding: 2%*/
+	width: 95%;
+	bottom:1%;
+	position: fixed;
+	overflow: hidden;
 	background: white;
-	border:2px solid;
+	border:2px solid #42bcf4;
+	border-radius: 6px;
 }
 
 #app_btn{
@@ -50,5 +92,53 @@ a{
 	width: 35%;
 	background: white;
 	border: 2px solid #42bcf4;
+	border-radius: 6px;
+	
 	font-size: 20px;
+}
+/*timer*/
+#time_display{
+font-size:50px;
+text-align: center;
+margin-top: 15%;
+}
+#startStop{
+	font-size: 20px;
+	border: 2px grey;
+	background: #B0E0E6;
+	border-radius: 9px;
+	margin-left: 30%;
+	margin-top: 5%;
+	text-align: center;
+	padding: 10px;
+}
+#reset{
+	font-size: 20px;
+	border: 2px grey;
+	background: #B0E0E6;
+	border-radius: 9px;
+	padding: 10px;
+	margin-right: 20%;
+	margin-top: 5%;
+
+}
+#list-exer{
+	font-size: 20px;
+	margin-left: 5%;
+	color: green;
+
+}
+/*submit button*/
+#exer_btn{
+	font-size: 20px;
+	margin-left: 30%;
+}
+
+/*add workout info*/
+#data_form{
+	margin-left: 5%;
+	font-size: 18px;
+
+
+
 }

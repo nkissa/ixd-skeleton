@@ -129,6 +129,22 @@ header{
 
 
 /*Navigation Bar*/
+li {
+  display: inline;
+}
+ul{
+	position: fixed;
+	overflow: auto;
+}
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
 .home-btn{
 	position: absolute;
 	bottom: 15px;
