@@ -104,6 +104,12 @@ font-size:50px;
 text-align: center;
 margin-top: 15%;
 }
+
+#time_displayb{
+font-size:30px;
+text-align: center;
+margin-top: 2%;
+}
 #startStop{
 	font-size: 20px;
 	border: 2px grey;

@@ -18,21 +18,24 @@ ga('send', 'pageview');
 <body>
 	<!--HEADER-->
 		<header>
-			<div class="timer">
-		        {{exercise.name}}
-		        <input type="hidden" id="name" value={{exercise.name}}>
-		        <input type="hidden" id="exer_interval" value={{exercise.interval}}>
-		        <input type="hidden" id="total_exer" value={{exercise.total_exercises}}>
+			<div id="app_title">
+				<h1>P91</h1>
+			</div>
+		</header>
+		<div class="timerb">
+	        {{exercise.name}}
+	        <input type="hidden" id="name" value={{exercise.name}}>
+	        <input type="hidden" id="exer_interval" value={{exercise.interval}}>
+	        <input type="hidden" id="total_exer" value={{exercise.total_exercises}}>
 
-	            <div id = "time_display">
+	            <div id = "time_displayb">
 	                00:00:00
 	            </div>
-	            <div class="buttons">
+	            <div class="buttonsb">
 	                <button id="startStop" onclick="startStop()">GO</button>
 	                <button id="reset" onclick="reset()">Reset</button>
 	            </div>
-    		</div>
-		</header>
+	    </div>
 
 
 		<!--Perset Workouts-->
