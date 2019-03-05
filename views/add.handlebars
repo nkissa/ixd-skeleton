@@ -7,18 +7,11 @@
 	{{> google}}
 </head>
 <body>
-	<div class="timer">
-		<div id = "time_display">
-			00:00:00
-		</div>
-		<div class="buttons">
-			<button id="startStop" onclick="startStop()">GO</button>
-			<button id="reset" onclick="reset()">Reset</button>
-		</div>
-	</div>
-	<div id="list-exer">
-	
-	</div>
+	<header>
+			<div id="app_title">
+				<h1>Add Workout</h1>
+			</div>
+		</header>
 
 	<form class="interval_container" method="POST" id="data_form" action="/add">
 			<label id="input_timer">Workout Name:</label>
