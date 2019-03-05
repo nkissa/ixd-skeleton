@@ -33,18 +33,15 @@ function stopWatch(){
     }
     
     
-	if(seconds % rep_minute === 0){
+	if(seconds % rep_minute === 0 && seconds != rep_minute * list_length){
 		console.log("Your exercise is done! Go to the next workout");
 		playNextAudio();
 	}
-	else if(seconds == rep_minute * list_length && seconds % rep_minute === 0){
+	if (seconds == rep_minute * list_length){
 		console.log("Workout Complete");
     	status="started";
     	playCompleteAudio();
     	clearInterval(interval);
-	}
-	else{
-		continue;
 	}
 
 
