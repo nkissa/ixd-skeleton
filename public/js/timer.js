@@ -9,7 +9,7 @@ let status = "stopped";
 var exer_name = null;
 var rep_minute = null;
 var list_length = null;
-var audio = new Audio('/js/alarm.wav');
+var audio = new Audio('/js/alarm.wav',);
 
 $(document).ready(function(){
     rep_minute = document.getElementById("exer_interval").value;
