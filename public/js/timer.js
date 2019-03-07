@@ -9,7 +9,9 @@ let status = "stopped";
 var exer_name = null;
 var rep_minute = null;
 var list_length = null;
-var audio = new Audio('/js/alarm.wav');
+var completeAudio = new Audio('/js/nextworkout.m4a',);
+var nextAudio = new Audio('/js/workoutcomplete.m4a',);
+
 
 $(document).ready(function(){
     rep_minute = document.getElementById("exer_interval").value;
@@ -31,14 +33,14 @@ function stopWatch(){
     }
     
     
-	if(seconds % rep_minute === 0){
+	if(seconds % rep_minute === 0 && seconds != rep_minute * list_length){
 		console.log("Your exercise is done! Go to the next workout");
-		playAudio();
+		playNextAudio();
 	}
-	if(seconds == rep_minute * list_length){
+	if (seconds == rep_minute * list_length){
 		console.log("Workout Complete");
     	status="started";
-    	playAudio();
+    	playCompleteAudio();
     	clearInterval(interval);
 	}
 
@@ -48,8 +50,11 @@ function stopWatch(){
 
 }
 
-function playAudio(){
-	audio.play();
+function playNextAudio(){
+	nextAudio.play();
+} 
+function playCompleteAudio(){
+	completeAudio.play();
 } 
 
 
@@ -57,7 +62,7 @@ function startStop(rep_minute){
 	if(status ==="stopped"){
 		interval = window.setInterval(stopWatch, 1000);
 		document.getElementById("startStop").innerHTML = "Stop";
-		status = "started";
+		status = "started";''
 	}
 	else{
 		window.clearInterval(interval);

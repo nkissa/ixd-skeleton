@@ -11,10 +11,12 @@ var bodyParser = require("body-parser");
 
 var index = require('./routes/index');
 var login = require("./routes/login");
+var altIndex = require("./routes/altbIndex");
 var help = require("./routes/help");
 var add = require("./routes/add");
 var timer = require("./routes/timer");
 var data = require("./routes/data");
+var premade= require("./routes/premade");
 // Example route
 // var user = require('./routes/user');
 
@@ -43,6 +45,8 @@ if ('development' == app.get('env')) {
 
 app.get("/", login.viewLogin);
 app.get('/index', index.view);
+app.get('/altindex', altIndex.view);
+app.get('/premade', premade.view);
 app.get("/help", help.viewHelpHB);
 app.get("/add", add.viewAddHB);
 app.get("/getdata", data.getData);
