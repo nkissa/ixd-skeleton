@@ -5,18 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/indexcss.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
 	{{> google}}
 </head>
 
 <body>
-	<div class="container">
+	<div class="containerhelp">
 		<h1 class="web_name_start">Help and Documentation</h1>
 		<h3>Step 1: Insert your desired time to be notified per exercise.</h3>
 		<h3>Step 2: Insert how many exercises you plan to do in the gym.</h3>
 		<h3>Step 3: Press the start button to begin your training. A reminder will tell that your time for an exercise is over,  and that you should go to the next exercise.</h3>	
 	</div>
-	<button type="back_btn_back" class="btn btn-outline-success">Back<a href="index"></a></button>
+	<div class="home-btn">
+		<ul>
+			{{#each Nav}}
+				<button id="app_btn"><a href="{{path}}">{{name}}</a></button>
+			{{/each}}
+		</ul>
+	</div>
 	<!--<br><button id="back_btn_back" onclick="window.history.back()"><a href="">Back</a></button>-->
 </body>
 <script src="https://code.jquery.com/jquery.js"></script>
