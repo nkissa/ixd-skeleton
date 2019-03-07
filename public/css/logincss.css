@@ -1,0 +1,35 @@
+body{
+	margin: 0px ;/*outside object*/
+	padding: 0px; /*inside object*/
+	background: #ff695e;
+	font-family: "verdana", sans serif;
+}
+h1{
+	text-align: center;
+	margin-top: 15%;
+	color: #254260;
+}
+h2{
+	margin-left: 3%;
+}
+h3{
+	text-align: center;
+}
+h5{
+	text-align: right;
+	margin-right: 15%;
+	font-size: 25px;
+	color:lightblue;
+}
+/*#fblogin{
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+}*/
+#fblogin{
+	display: table;
+	margin: 0 auto;
+}
+#signup{
+	margin-left: 
+}

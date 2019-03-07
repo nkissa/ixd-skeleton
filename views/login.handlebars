@@ -4,21 +4,55 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	{{> facebook}}
+
+	<link href="/css/logincss.css" rel="stylesheet">
 	{{> google}}
 	<script src="/js/facebook.js"></script>
 	
 </head>
 
 <body>
-	<div class="container">
+	
 		<form method="post" id="loginform">
 			<h1 class="web_name_start">P91X</h1>
-			<h2>Login</h2>
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" id="fb">
-			</fb:login-button>
-			<h5><a href = "/index">Login</a></h5>
+			<div class="container">
+			<h2>Sign up</h2>
+			<div class="input-group">
+  <div id="signup"style="width:100%">
+  <div class="input-group-prepend">
+    <span class="input-group-text">First and last name:</span>
+  </div>
+  <div class="shadow-sm p-3 mb-5 bg-white rounded">
+  <input type="text" aria-label="First name" class="form-control">
+  <input type="text" aria-label="Last name" class="form-control">
+</div>
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg">Email:</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg">Password:</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+</div>
+</div>
+
+<h5><a href = "/index">Login</a></h5
+
+<h3>Or login through Facebook</h3>
+<div id="outer" style="width:100%">
+<div id="fblogin">
+	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" id="fb">
+	</fb:login-button>
+</div>
+</div>
+		</div>
 		</form>
-	</div>
+	
 
 </body>
 <script src="https://code.jquery.com/jquery.js"></script>
