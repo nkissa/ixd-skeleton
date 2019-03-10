@@ -7,7 +7,8 @@ body{
 h1{
 	color:#254260;
 	font-family: "verdana", sans serif;
-	height:10%;
+	height:12%;
+	margin-top: 10%;
 }
 header{
 	margin: 2%;
@@ -19,6 +20,7 @@ header{
 	border:1px solid;*/
 	
 }
+
 
 a{
 	text-decoration: none;
@@ -43,41 +45,61 @@ h4 {
 #all_exer{
 	list-style-type: none;
 	display: block;
-	width: 250px;
+	width: 90%;
 	background-color: #eef5db;
 	background-color: white;
 	align-items: center;
 	 text-align: center;
-	 padding: 15px;
-	 font-size: 25px;
+	padding: 15px;
+	 font-size: 20px;
 }
 
  li{
  	text-align: center;
-  border-bottom: 1px solid #555;
-  padding-bottom: 15px;
+  	border-bottom: 1px solid black;
+  	border-width: 100%;
+  	padding-bottom: 3%;
  }
  li:last-child {
   border-bottom: none;
 }
 
 #addworkout_btn{
-	width: 50%;
-	margin-right: 25%;
-	margin-left: 25%;
-	font-size: 25px;
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+	font-size: 100%;
 	
 }
-
-
+/*add workout page input */
+#exer_name{
+	border-radius: 7px;
+	height: 5%;
+	width: 90%;
+	margin-top: 3%;
 }
 
-#addworkout_btn{
+#input{
+	border-radius: 7px;
+	height: 5%;
+	width: 90%;
+	margin-top: 3%;
+}
+
+#exer_input{
+	border-radius: 7px;
+	height: 5%;
+	width: 90%;
+	margin-top: 3%;
+}
+}
+
+/*#addworkout_btn{
 	margin-left: 25%;
 	font-size: 30px;
 }
 
-
+*/
 
 
 }
@@ -104,7 +126,6 @@ h4 {
 	margin-left: 1.5%;
 	margin-left: 2%;
 	position:fixed;
-	position: fixed;
 	overflow: hidden;
 	background: white;
 	/*border:2px solid #2d3651;*/
@@ -121,7 +142,7 @@ h4 {
 }
 /*timer*/
 #time_display{
-font-size:50px;
+font-size:40px;
 text-align: center;
 margin-top: 15%;
 }
@@ -140,8 +161,7 @@ margin-top: 2%;
 	background: #B0E0E6;
 	border-radius: 9px;
 	margin-left: 25%;
-	margin-left: 30%;
-	margin-top: 5%;
+	margin-top: 7%;
 	text-align: center;
 	padding: 10px;
 }
@@ -152,8 +172,8 @@ margin-top: 2%;
 	border-radius: 9px;
 	padding: 10px;
 	margin-right: 25%;
-	margin-right: 20%;
-	margin-top: 5%;
+	
+	margin-top: 7%;
 
 }
 #list-exer{
@@ -185,6 +205,7 @@ h3{
 /*add workout info*/
 #data_form{
 	margin-left: 5%;
-	margin-top: 10%;
+	margin-right: 5%;
+	margin-top: 3%;
 	font-size: 18px;
 }
