@@ -9,6 +9,7 @@ h1{
 	font-family: "verdana", sans serif;
 	height:12%;
 	margin-top: 10%;
+	font-size:160%;
 }
 header{
 	margin: 2%;
@@ -111,8 +112,7 @@ h4 {
 	border: 1px solid blue;
 	background: white;
 	text-align: left;
-	display: block;
-	position: sticky;
+	/*position: sticky;*/
 	bottom: 0;
 }
 /*nav bar*/
@@ -122,7 +122,6 @@ h4 {
 	padding: 2%*/
 	width: 97%;
 	bottom:1%;
-
 	margin-left: 1.5%;
 	margin-left: 2%;
 	position:fixed;
@@ -194,6 +193,7 @@ margin-top: 2%;
 	/*margin-left: 30%;*/
 	display: table;
 	margin: 0 auto;
+	margin-top: 5%;
 
 }
 #preworkout_btn{
@@ -201,6 +201,7 @@ margin-top: 2%;
 }
 h3{
 	margin-left: 3%;
+	font-size: 130%;
 }
 /*add workout info*/
 #data_form{

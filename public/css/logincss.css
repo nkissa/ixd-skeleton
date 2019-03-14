@@ -6,7 +6,7 @@ body{
 }
 h1{
 	text-align: center;
-	margin-top: 15%;
+	margin-top: 17%;
 	color: #254260;
 }
 h2{
@@ -14,6 +14,8 @@ h2{
 }
 h3{
 	text-align: center;
+	font-size: 90%;
+	font-weight: lighter;
 }
 h5{
 	text-align: right;
@@ -29,7 +31,35 @@ h5{
 #fblogin{
 	display: table;
 	margin: 0 auto;
+	margin-top: 3%;
 }
 #signup{
 	margin-left: 
+}
+#inputForm{
+	margin-left: 4%;
+}
+#input1{
+	width: 45%;
+	height: 5%;
+	margin-top: 2%;
+	border-radius: 7px;
+}
+#input2{
+	width: 45%;
+	height: 5%;
+	margin-top: 2%;
+	border-radius: 7px;
+}
+#input3{
+	width: 90%;
+	height: 5%;
+	margin-top: 2%;
+	border-radius: 7px;
+}
+#input4{
+	width: 90%;
+	height: 5%;
+	margin-top: 2%;
+	border-radius: 7px;
 }
